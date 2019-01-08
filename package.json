@@ -3,30 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "16.4.2",
-    "react-dom": "16.4.2",
-    "react-scripts": "1.1.5",
     "admin-lte": "2.3.11",
     "axios": "0.18.0",
     "font-awesome": "4.7.0",
     "ionicons": "4.4.3",
     "jquery": "2.2.3",
+    "react": "16.4.2",
+    "react-dom": "16.4.2",
     "react-redux": "5.0.7",
     "react-redux-toastr": "7.4.0",
     "react-router": "4.3.1",
     "react-router-dom": "4.3.1",
+    "react-scripts": "1.1.5",
     "redux": "4.0.0",
     "redux-form": "7.4.2",
     "redux-multi": "0.1.12",
     "redux-promise": "0.6.0",
     "redux-thunk": "2.3.0",
-    "http-server": "0.10.0"
+    "serve": "^10.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
