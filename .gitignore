@@ -5,16 +5,11 @@
 /.pnp
 .pnp.js
 
-#.gitignore (produção)
-
-src/*
-public/*
-build/static/css/*.map
-build/static/js/*.map
-
-
 # testing
 /coverage
+
+# production
+/build
 
 # misc
 .DS_Store
